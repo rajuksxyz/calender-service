@@ -1,0 +1,36 @@
+.holiday-list {
+    margin-top: 20px;
+    text-align: left;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  
+  .holiday-list ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .holiday-list li {
+    padding: 8px 10px;
+    background-color: #f9f9f9;
+    margin: 5px 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .btn-remove {
+    background-color: #dc3545;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .btn-remove:hover {
+    background-color: #c82333;
+  }
+  

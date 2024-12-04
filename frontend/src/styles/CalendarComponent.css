@@ -1,0 +1,168 @@
+.calendar-layout {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    flex-wrap: wrap;
+  }
+  
+  .calendar-section {
+    flex: 1;
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    min-width: 300px;
+  }
+  
+  .calendar-section h2 {
+    font-size: 22px;
+    margin-bottom: 15px;
+  }
+  
+  .btn-add-holiday {
+    margin-top: 15px;
+    padding: 10px 20px;
+    background-color: #000080;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .btn-add-holiday:hover {
+    background-color: #0056b3;
+  }
+  
+  .info-section {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    min-width: 300px;
+  }
+  
+  .holidays-list {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .holidays-list h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+  
+  .holidays-list ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .holidays-list li {
+    padding: 5px 0;
+    font-size: 14px;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .holidays-list li:last-child {
+    border-bottom: none;
+  }
+  
+  .working-days-section {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .working-days-section h3 {
+    font-size: 20px;
+    margin-bottom: 15px;
+  }
+  
+  .date-picker {
+    display: flex;
+    gap: 20px;
+  }
+  
+  .date-picker label {
+    display: flex;
+    flex-direction: column;
+    font-size: 14px;
+    color: #555;
+  }
+  
+  .date-picker input {
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+  }
+  
+  .btn-calculate {
+    margin-top: 15px;
+    padding: 8px 15px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .btn-calculate:hover {
+    background-color: #218838;
+  }
+  
+  .working-days-result {
+    margin-top: 10px;
+    font-size: 16px;
+    color: #333;
+  }
+  
+  .holiday {
+    background-color: #ffcccc !important;
+    color: #a00;
+    font-weight: bold;
+  }
+
+  .today {
+    background-color: #ffeb3b !important;
+    color: #000;
+    font-weight: bold;
+    border-radius: 4px; 
+    border: 2px solid #fbc02d;
+  }
+  
+  @media (max-width: 768px) {
+    .calendar-layout {
+      flex-direction: column;
+      gap: 15px;
+    }
+  
+    .calendar-section, .info-section {
+      width: 100%;
+    }
+  
+    .date-picker {
+      flex-direction: column;
+      gap: 10px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .btn-add-holiday, .btn-calculate {
+      width: 100%;
+      padding: 12px;
+    }
+  
+    .holidays-list li, .working-days-result {
+      font-size: 12px;
+  }
+} 
